@@ -1,0 +1,421 @@
+<html>
+<head>
+<title>RESORTS.PH / HOME</title>
+
+<link rel = "icon" href = 
+"resorticon.png">
+</head>
+
+<style>
+
+@font-face {
+    font-family: customfont;
+    src: url(customfont.otf);
+}
+
+@font-face {
+	font-family: customfontbold;
+	src: url(customfontbold.otf);
+}
+
+.topnav {
+  background-color: #F0E9E9;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #064273;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+    color: #064273;
+    background-color: #F0E9E9;
+    border-bottom: black solid 1px;
+}
+
+.topnav a.active {
+  background-color: #F0E9E9;
+  color: #064273;
+  border-bottom: black solid 1px;
+}
+
+div {
+  font-family: customfont;
+}
+
+.DivTitle {
+  width: 800px;
+  font-family: customfontbold;
+  padding: 50px;
+  margin-left: 650px;
+  margin-top: 150px;
+  background-color: #064273;
+  
+}
+
+.DivContent {
+  width: 800px;
+  font-family: customfont;
+  padding: 50px;
+  margin-left: 500px;
+  margin-top: -95px;
+  margin-bottom: 100px;
+  background-color: #064273;
+  text-align: center;
+  
+}
+
+  h1{
+  font-size: 50;
+  color: #F5F5F5;
+  }
+  
+  h2{
+  color: #F5F5F5;
+  }
+  
+  .textcont{
+  margin-top: 15px;
+  margin-left: 50px;
+  margin-right: 20px;
+  color: #171717;
+  font-size: 30;
+  }
+  
+  .textcont1{
+  margin-left: 50px;
+  text-align: justify;
+  margin-right: 20px;
+  }
+  
+.DivImg {
+  position: absolute;
+  top: 250px;
+  right: 100px;
+  width: 650px;
+  height: 350px;
+}
+
+<!--Slideshow-->
+
+/* Styling the area of the slides */
+     
+    #slideshow {
+        overflow: hidden;
+        height: 510px;
+        width: 728px;
+        margin: 0 auto;
+    }
+     
+    /* Style each of the sides
+    with a fixed width and height */
+     
+    .slide {
+        float: left;
+        height: 510px;
+        width: 728px;
+    }
+     
+    /* Add animation to the slides */
+     
+    .slide-wrapper {
+         
+        /* Calculate the total width on the
+      basis of number of slides */
+        width: calc(728px * 4);
+         
+        /* Specify the animation with the
+      duration and speed */
+        animation: slide 35s ease infinite;
+    }
+     
+    /* Set the background color
+    of each of the slides */
+     
+    .slide:nth-child(1) {
+        background: #D3D3D3;
+    }
+     
+    .slide:nth-child(2) {
+        background: #D3D3D3;
+    }
+     
+    .slide:nth-child(3) {
+        background: #D3D3D3;
+    }
+     
+    .slide:nth-child(4) {
+        background: #D3D3D3;
+    }
+     
+    /* Define the animation
+    for the slideshow */
+     
+    @keyframes slide {
+         
+        /* Calculate the margin-left for
+      each of the slides */
+        20% {
+            margin-left: 0px;
+        }
+        40% {
+            margin-left: calc(-509px * 1);
+        }
+        60% {
+            margin-left: calc(-509px * 2);
+        }
+    }
+
+.SlidePic {
+	margin-top: 50px;
+	margin-left: 50px;
+	}
+
+
+.icondiv{
+margin-left: 860px;
+margin-bottom: 100px;
+margin-top: -100px;
+}
+
+.icondiv1{
+
+margin-left: 45px;
+margin-bottom: 100px;
+margin-top: 550px;
+}
+
+.icondiv2{
+
+margin-left: 850px;
+margin-bottom: -150px;
+margin-top: 100px;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #042E50;
+  color: white;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 610px;
+  height: 270px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #042E50;
+  color: white;
+  font-size: 16px;
+  padding: 20px 40px;
+}
+a:link {
+  color: #808080;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #808080;
+  background-color: transparent;
+  text-decoration: none;
+}
+body {
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+
+</style>
+
+<body style = "background-color: #064273; font-family: customfont;" >
+
+
+<div class="topnav">
+  <a class="active" href="./index.html">Home</a>
+  <a href="./mountainside.html">Mountainside Resorts</a>
+  <a href="./poolside.html">Poolside Resorts</a>
+  <a href="./camping.html">Camping</a>
+  <a href="./about.html">About Us</a>
+</div>
+
+<div class="icondiv2">
+<a href="./index.html"><img src="resorticon.png" width="200px" alt="Resorts.ph"></a></div>
+
+<div class="DivTitle">
+<h1> Relaxation near the Metro! </h1>
+</div>
+
+<div class="DivContent">
+<h2>We deserve to relax even within the outskirts of the metro. Here in Resorts.ph, we provide you the relaxation you deserve. With mountainside and poolside resorts in Antipolo and Tanay, you don’t have to travel far to relax or adventure! What are you waiting for? Book now!</h2>
+</div>
+
+
+ <div id="slideshow">
+        <div class="slide-wrapper">
+            <div class="slide">
+				<div class="SlidePic">
+					<div class="container">
+					<img src="rain2.jpg" class="image">
+					<div class="middle">
+					<div class="text"><a href="./mountainside.html">See More</a></div>
+					</div>
+					</div>
+					</div>
+					<div class="textcont">Mountainside Resorts</div>
+					<div class="textcont1">Enjoy the great choices of our mountainside resorts. The different mountainside views will surely catch your attention, you will surely have the best vacation.</div>
+            </div>
+            <div class="slide">
+				<div class="SlidePic">
+					<div class="container">
+					<img src="poolside.jpg" class="image">
+					<div class="middle">
+					<div class="text"><a href="./poolside.html">See More</a></div>
+					</div>
+					</div>
+					</div>
+				<div class="textcont">Poolside Resorts</div>
+				<div class="textcont1">Enjoy choosing from our best selection of poolside resorts. Different types of events and accommodations are available and surely the stay will be magnificent.</div>
+				
+            </div>
+            <div class="slide">
+				<div class="SlidePic">
+					<div class="container">
+					<img src="camping.jpg" class="image">
+					<div class="middle">
+					<div class="text"><a href="./camping.html">See More</a></div>
+					</div>
+					</div>
+					</div>
+					<div class="textcont">Camping</div>
+					<div class="textcont1">Different camping resorts are to be explored, we bring you the best ones. The stay will surely be thrilling and exciting.
+					</div>
+            </div>
+            <div class="slide">
+                <div class="SlidePic">
+					<div class="container">
+					<img src="aboutslide.png" class="image">
+					<div class="middle">
+					<div class="text"><a href="./about.html">Learn More</a></div>
+					</div>
+					</div>
+					</div>
+					<div class="textcont">About Us</div>
+            </div>
+        </div>
+    </div>
+<br>
+
+
+
+<footer>
+
+<div class="icondiv1">
+<a href="./index.html"><img src="resorticon.png" width="200px" alt="Resorts.ph"></a></div>
+<h2 style= "margin-left: 45; font-size: 15; margin-top: -50">COPYRIGHT &copy; 2022 DEL LUNA, CO. ALL RIGHTS RESERVED</h2>
+<h2 style= "text-align: center;font-size: 15; margin-left: 40px;"><u><a href="./about.html">ABOUT US</a></u></h2>
+</footer>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+</script>
+</body>
+
+</html>
